@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>cl-date-time by isismelting</title>
+    <title>cl-date-time.lisp by isismelting</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -31,7 +31,7 @@
 
       <section>
         <div id="title">
-          <h1>cl-date-time</h1>
+          <h1>cl-date-time.lisp</h1>
           <p>quickly manage date-time and timestamp units within a common lisp</p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/isismelting">isismelting</a></span>
@@ -39,16 +39,24 @@
         </div>
 
         <h3>
-<a name="a-simple-date-time-utility" class="anchor" href="#a-simple-date-time-utility"><span class="octicon octicon-link"></span></a>a simple date-time utility</h3>
+<a name="a-simple-lisp-date-time-utility" class="anchor" href="#a-simple-lisp-date-time-utility"><span class="octicon octicon-link"></span></a>a simple lisp date-time utility</h3>
 
-<p>instructions are here, there and everywhere.</p>
+<p>i failed to locate an existing utility for dealing quickly with units of time- and date-related information in popular common lisp package repositories.  here's the simple way to get my open-source utility for your lisp, via github:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<pre><code>$ cd ~/quicklisp/local-projects &amp;&amp; mkdir cl-date-time
+$ cd cl-date-time
+$ git clone https://github.com/isismelting/cl-date-time.git
 </code></pre>
 
-<p>this utility written at <a href="https://github.com/isismelting" class="user-mention">@isismelting</a>, check our homepage at <a href="http://www.isismelting.com">isismelting.com</a></p>
+<p>although i've yet to test this myself, having easy access to the utility on its machine of origin, i assume it should be recognized by quicklisp using (ql:quickload 'cl-date-time) at the repl.</p>
+
+<p>the project has a lot of room to grow.  examine for a moment the expected date-time utilities inside linux, bsd, bare-bones *nix-likes, or even non-ethical operating systems under closed source.  it baffles me that we don't demand the same kind of functionality from our lisps.  take a look at the source code for this package; toward its end are two string-related functions that represent the first steps toward another dimension of this project.</p>
+
+<p>the function hastily defun'd as "(time-string)" should end up behaving a lot more like common lisp's famous "(format)" special form, complete with operands to represent fragments of time. the included function is a primitive sketch at best, but it serves well as a placeholder until i figure out how to do this right.</p>
+
+<p>and so i ask for your help. <a href="https://github.com/isismelting" class="user-mention">@isismelting</a> is a very, very small group of developers. if you are interested in lending your expertise in coding elegance to projects as simple as they are necessary but which demand to be writen with grace and perfection, please contact us directlly via email at <a href="mailto:development@isismelting.com">development@isismelting.com</a> - please use a title we'll recognize, as our catchall's spam hitwoman is under the weather at the moment, and we would not want to miss your letter.</p>
+
+<p>this utility was, is, written at <a href="https://github.com/isismelting" class="user-mention">@isismelting</a> development. do check our homepage at <a href="http://www.isismelting.com">isismelting.com</a></p>
       </section>
 
     </div>
